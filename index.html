@@ -20,10 +20,11 @@
   </script>
   </head>
 <body>
-  <p class="button"></p>   
-  
+  <h1>Test</h1>
+  <p class="button"></p>
+
   <div>
-     <img src="images/Dom.png"> 
+     <img src="images/Dom.png">
   </div>
   <script type="text/javascript">
 
@@ -56,8 +57,8 @@ window.open("autumn_effect.htm","","width=350,height=500")
 
   var dx, xp, yp;    // coordinate and position variables
   var am, stx, sty;  // amplitude and step variables
-  var i, doc_width = 800, doc_height = 600; 
-  
+  var i, doc_width = 800, doc_height = 600;
+
   if (ns6up) {
     doc_width = self.innerWidth;
     doc_height = self.innerHeight;
@@ -73,7 +74,7 @@ window.open("autumn_effect.htm","","width=350,height=500")
   stx = new Array();
   sty = new Array();
   snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "images/Domlery.png" : snowsrc
-  for (i = 0; i < no; ++ i) {  
+  for (i = 0; i < no; ++ i) {
     dx[i] = 0;                        // set coordinate variables
     xp[i] = Math.random()*(doc_width-50);  // set position variables
     yp[i] = Math.random()*doc_height;
@@ -108,7 +109,7 @@ window.open("autumn_effect.htm","","width=350,height=500")
       }
       dx[i] += stx[i];
       document.getElementById("dot"+i).style.top=yp[i]+"px";
-      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";
     }
     snowtimer=setTimeout("snowIE_NS6()", 10);
   }
@@ -117,7 +118,7 @@ window.open("autumn_effect.htm","","width=350,height=500")
     if (window.snowtimer) clearTimeout(snowtimer)
     for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
   }
-    
+
 
 if (ie4up||ns6up){
     snowIE_NS6();
