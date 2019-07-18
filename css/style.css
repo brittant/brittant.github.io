@@ -1,0 +1,15 @@
+#domlery {
+  visibility: visible;
+  position: absolute;
+}
+
+#bernlery {
+  visibility: hidden;
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
